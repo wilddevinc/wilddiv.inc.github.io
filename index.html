@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<meta charset="UTF-8">
+	   <meta charset="UTF-8">
        <title>MadCreation</title>
-    </head>
-    <body>
-		<img src="https://pw.artfile.me/wallpaper/23-04-2015/650x366/sarah-kerrigan-video-igry-drugoe-art-kor-926380.jpg">
-		<p> As dear Sarah said "We are without limits"</p>
-    </body>
+	</head>
+    <body style="background-color:Darkviolet;">
+			<div style="margin-left:auto;margin-right:auto;text-align:center">
+			
+			<img id="Kerrigan" src="images/Kerrigan.jpg">
+			
+			<p id="quote1">As Sarah said - "We are without limits"</p>
+			
+			<p><button type="button" value="button" onclick="changeImage();">">>>"</button></p>
+			
+			<audio controls autoplay>
+				<src="music/orion.mp3" type="audio/mpeg">
+			</audio>
+            	
+		    <script>
+			function changeImage() {
+				var Image_Id = document.getElementById("Kerrigan");
+				if (Image_Id.src.match("images/Kerrigan.jpg")){
+					Image_Id.src = "images/Me and IT.jpg";
+				}
+				else {
+				    Image_Id.src = "images/Kerrigan.jpg";
+				}	
+		    }        
+				</script>
+			</div>	
+	</body>
 </html>
