@@ -1,25 +1,78 @@
 <!DOCTYPE html>
 <html>
     <head>
-	   <meta charset="UTF-8">
+	   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
        <title>MadCreation</title>
-	    <h1 style="margin-left:auto;margin-right:auto;text-align:center">
-	   Learn, evolve, Create
-	   </h>
+	   
+	   <h1 style="margin-left:auto;margin-right:auto;text-align:center; color:#FF4500; font-size:50";>
+	   <em>Learn, evolve, Create</em>
+	   </h1>
+	   
+	   <style>
+			body {font-family: "Arial";}
+
+			.Leftmenu {
+				width: 200px;
+				position: fixed;
+				z-index: 1;
+				top: 70px;
+				left: 10px;
+				background: none;
+				overflow-x: hidden;
+				padding: 8px 0;
+				}
+
+			.Leftmenu a {
+				padding: 6px 8px 6px 16px;
+				text-decoration: none;
+				font-size: 25px;
+				color: #DC143C;
+				display: block;
+				}
+
+			.Leftmenu a:hover {
+				color: #DC143C;
+				}
+
+			.main {
+				margin-left: 400px;
+				font-size: 28px;
+				padding: 0px 10px;
+				}
+
+			@media screen and (max-height: 450px) {
+				.Leftmenu {padding-top: 15px;}
+				.Leftmenu a {font-size: 18px;}
+				}
+		</style>
 	</head>
+	
+	
     <body style="background-color:Darkviolet;">
+	
+		<div class="Leftmenu">
+			<a href="#campfire">campfire</a>
+			<a href="#LongStories">LongStories</a>
+			<a href="#Books">Books</a>
+			<a href="#In progress">In progress</a>
+			</div>
+
+		<div class="main">
+   
+		</div>  
+	
 			<div style="margin-left:auto;margin-right:auto;text-align:center">
 			
 			<img id="Kerrigan" src="images/Kerrigan.jpg">
 			
-			<p id="quote1">As Sarah said - "We are without limits"</p>
+			<p id="quote1" style="color:#FF4500; font-size:30px";>As Sarah said - "We are without limits"</p>
 			
 			<p><button type="button" value="button" onclick="changeImage();">">>>"</button></p>
 			
 			<audio controls=autoplay>
 				<source src="music/Sea Theme.mp3">
 			</audio>
-            	
+			            	
 		    <script>
 			function changeImage() {
 				var Image_Id = document.getElementById("Kerrigan");
@@ -33,4 +86,7 @@
 				</script>
 			</div>	
 	</body>
+	<footer style="font-size:30px; color:#FF4500; text-align:center";>
+	
+	<em> There is no code without a bug</em></footer> 
 </html>
